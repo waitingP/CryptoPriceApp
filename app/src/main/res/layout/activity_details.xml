@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_color">
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/popup_element"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/cell_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10sp"
+            android:paddingRight="10sp">
+
+            <TextView
+                android:id="@+id/details_graph_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="30sp"
+                android:text="Price History"
+                android:textColor="@color/colorPrimary"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/black"
+                android:paddingBottom="@dimen/text_header_bottom_padding" />
+
+            <ImageView
+                android:id="@+id/details_graph"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:adjustViewBounds="true"
+                android:paddingTop="@dimen/image_padding"
+                android:paddingBottom="@dimen/image_padding"
+                android:src="@drawable/bitcoin_history" />
+
+            <TextView
+                android:id="@+id/details_text_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About This Currency"
+                android:textColor="@color/colorPrimary"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/black"
+                android:paddingBottom="@dimen/text_header_bottom_padding" />
+
+            <TextView
+                android:id="@+id/details_text_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/text_header_bottom_padding"
+                android:paddingBottom="@dimen/text_header_bottom_padding"
+                android:text="About bitcoin"
+                android:textAlignment="textStart"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/details_dismiss"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="Close" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
